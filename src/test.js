@@ -1,0 +1,3 @@
+function ornage() {
+  return 'orange';
+}
