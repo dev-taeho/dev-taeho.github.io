@@ -1,36 +1,18 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
-import DefaultButton from './components/Button';
+import Home from '@page/Home';
+import Project from '@page/Project';
+import Experience from '@page/Experience';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        {/* <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a> */}
-      </div>
-      <h1>1ite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        {count > 3 ? 'orange' : 'green'}
-        Click onaa thess Vite and React logos to learn more
-      </p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/experience" element={<Experience />}></Route>
+        <Route path="/project" element={<Project />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
