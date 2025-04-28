@@ -1,7 +1,7 @@
 import './App.css';
-import Home from '@page/Home';
-import Project from '@page/Project';
-import Experience from '@page/Experience';
+import Home from '@page/home';
+import Project from '@page/project';
+import Experience from '@page/experience';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
