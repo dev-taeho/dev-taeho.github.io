@@ -1,4 +1,4 @@
-import DefaultButton from '@/components/Button';
+import DefaultButton from '@src/components/Button';
 import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
@@ -12,6 +12,11 @@ export default function Home() {
           btnText={'experience page'}
           onClick={() => navigate('/experience')}
         />
+        <ol>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ol>
       </div>
     </>
   );
